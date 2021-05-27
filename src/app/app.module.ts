@@ -12,12 +12,24 @@ import { AppComponent } from './app.component';
 import { AppRoutes } from './app.routing';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { StudentComponent } from './pages/student/student.component';
+import { AdmissionComponent } from './pages/admission/admission.component';
+import { StudentCreateComponent } from './pages/student/student-create/student-create.component';
+import { StudentEditComponent } from './pages/student/student-edit/student-edit.component';
+import { AdmissionCreateComponent } from './pages/admission/admission-create/admission-create.component';
+import { AdmissionEditComponent } from './pages/admission/admission-edit/admission-edit.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdminLayoutComponent
+    AdminLayoutComponent,
+    StudentComponent,
+    AdmissionComponent,
+    StudentCreateComponent,
+    StudentEditComponent,
+    AdmissionCreateComponent,
+    AdmissionEditComponent
   ],
   imports: [
     BrowserAnimationsModule,
