@@ -18,6 +18,7 @@ import { StudentCreateComponent } from './pages/student/student-create/student-c
 import { StudentEditComponent } from './pages/student/student-edit/student-edit.component';
 import { AdmissionCreateComponent } from './pages/admission/admission-create/admission-create.component';
 import { AdmissionEditComponent } from './pages/admission/admission-edit/admission-edit.component';
+import { FilterPipe } from './pages/admission/admission-create/filter.pipe';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { AdmissionEditComponent } from './pages/admission/admission-edit/admissi
     StudentCreateComponent,
     StudentEditComponent,
     AdmissionCreateComponent,
-    AdmissionEditComponent
+    AdmissionEditComponent,
+    FilterPipe
   ],
   imports: [
     BrowserAnimationsModule,
