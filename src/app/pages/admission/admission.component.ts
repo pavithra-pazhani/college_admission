@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdmissionComponent implements OnInit {
 
+  searchname:any="";  
+  info=[
+    {admission:101,name:'aaa',dep:'cs'},
+    {admission:102,name:'bbb',dep:'bca'}
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
