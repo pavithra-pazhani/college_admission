@@ -7,7 +7,7 @@ import { User } from './user';
   styleUrls: ['./student-create.component.css']
 })
 export class StudentCreateComponent implements OnInit {
-  userModel = new User("","","yy",'','','','','','','','','','',"");
+  userModel = new User("");
   gen =["Male", 'Female'];
 
   constructor() { }
