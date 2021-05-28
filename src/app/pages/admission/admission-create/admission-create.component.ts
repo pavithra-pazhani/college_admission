@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdmissionCreateComponent implements OnInit {
 
+  searchname:any="";  
   info=[
     {reg:101,name:'aaa',dep:'cs'},
     {reg:102,name:'bbb',dep:'bca'}
