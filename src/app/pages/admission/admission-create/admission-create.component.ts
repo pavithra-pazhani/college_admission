@@ -17,5 +17,9 @@ export class AdmissionCreateComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  onclick()
+  {
+    alert("Your Form was Successfully Updated");
+  }
 
 }
