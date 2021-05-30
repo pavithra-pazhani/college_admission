@@ -13,411 +13,45 @@
             <thead class=" text-primary">
 
               <th>
-                Id
+                REG NO
               </th>
               <th>
                 DEPARTMENT NAME
               </th>
-              <th>BATCH
-              </th>
+              <th>BRANCH</th>
               <th>AGE
               </th>
               <th>NAME
-              </th>
-              <th>
-                FATHER NAME
-              </th>
-              <th>
-                MOTHER NAME
               </th>
               <th>EMAIL
               </th>
               <th>PHONE
               </th>
               <th>ADDRESS</th>
+              <th>PARENT NAME</th>
               <th class="text-right">
               </th>
             </thead>
             <tbody>
-              <tr>
+              <tr *ngFor="let eachstudent of students;">             
                 <td>
-                  kcas01
+                  {{eachstudent.regNo}}
                 </td>
                 <td>
-                  BCA
+                  {{eachstudent.department}}
                 </td>
                 <td>
-                  2018-21
+                  {{eachstudent.branch}}
                 </td>
-                <td>18</td>
-                <td>P.Pavithra</td>
-                <td>V.pazhani</td>
-                <td>P.Latha</td>
-                <td>pavi123@gmail.com</td>
-                <td>0987654321</td>
-                <td>99,abde street,Abc</td>
+                <td>{{eachstudent.age}}</td>
+                <td>{{eachstudent.name}}</td>
+                <td>{{eachstudent.email}}</td>
+                 <td>{{eachstudent.phone}}</td>
+                <td>{{eachstudent.address}}</td>
+                <td>{{eachstudent.ParentName}}</td>
                 <button routerLink="/student/edit">EDIT</button>
               </tr>
-              <tr>
-                <td class="text-right">
-                  Kcas02
-                </td>
-                <td>
-                  BCA
-                </td>
-                <td>
-                  2018-21
-                </td>
-                <td>18</td>
-                <td>T.Priya</td>
-                <td>K.thiru</td>
-                <td>P.zara</td>
-                <td>pri123@gmail.com</td>
-                <td>0987658721</td>
-                <td>11,abde strret,Abc</td>
-                <button routerLink="/student/edit">EDIT</button>
-              </tr>
-              <tr>
-                <td class="text-right">
-                  Kcas03
-                </td>
-                <td>
-                  computer science
-                </td>
-                <td>
-                  2018-21
-                </td>
-                <td>18</td>
-                <td>J.ziya</td>
-                <td>O.Jaffer</td>
-                <td>J.Lafeg</td>
-                <td>ziya23@gmail.com</td>
-                <td>0987645321</td>
-                <td>93,ppoi strret,Abc</td>
-                <button routerLink="/student/edit">EDIT</button>
-              </tr>
-              <tr>
-                <td class="text-right">
-                  kcas04
-                </td>
-                <td>
-                  Comuter Science
-                </td>
-                <td>
-                  2018-21
-                </td>
-                <td>19</td>
-                <td>A.Kavi</td>
-                <td>V.Ani</td>
-                <td>P.Lalli</td>
-                <td>kavi123@gmail.com</td>
-                <td>0986754321</td>
-                <td>99,kkde strret,Abc</td>
-                <button routerLink="/student/edit">EDIT</button>
-              </tr>
-              <tr>
-                <td class="text-right">
-                  Kcas05
-                </td>
-                <td>
-                  BCA
-                </td>
-                <td>
-                  2018-21
-                </td>
-                <td>19</td>
-                <td>N.Aara</td>
-                <td>N.Nilan</td>
-                <td>D.shetha</td>
-                <td>shei123@gmail.com</td>
-                <td>0117654321</td>
-                <td>99,lkje strret,Abc</td>
-                <button routerLink="/student/edit">EDIT</button>
-              </tr>
-              <tr>
-                <td class="text-right">
-                  kcas06
-                </td>
-                <td>
-                  BCA
-                </td>
-                <td>
-                  2018-21
-                </td>
-                <td>20</td>
-                <td>Y.Tessa</td>
-                <td>M.yass</td>
-                <td>P.Wasa</td>
-                <td>tesa123@gmail.com</td>
-                <td>0984654321</td>
-                <td>99,qboi strret,Abc</td>
-                <button routerLink="/student/edit">EDIT</button>
-              </tr>
-              <tr>
-                <td class="text-right">
-                  Kcas07
-                </td>
-                <td>
-                  physics
-                </td>
-                <td>
-                  2018-21
-                </td>
-                <td>19</td>
-                <td>Q.Teju</td>
-                <td>J.Qsvag</td>
-                <td>G.Lokha</td>
-                <td>jute123@gmail.com</td>
-                <td>0001654321</td>
-                <td>99,ooli strret,Abc</td>
-                <button routerLink="/student/edit">EDIT</button>
-              </tr>
-              <tr>
-                <td class="text-right">
-                  Kcas08
-                </td>
-                <td>
-                  Maths
-                </td>
-                <td>
-                  2018-21
-                </td>
-                <td>20</td>
-                <td>A.Zyua</td>
-                <td>O.Aasal</td>
-                <td>K.athal</td>
-                <td>vzyi123@gmail.com</td>
-                <td>0989854321</td>
-                <td>99,qwer strret,Abc</td>
-                <button routerLink="/student/edit">EDIT</button>
-              </tr>
-              <tr>
-                <td class="text-right">
-                  kcas09 </td>
-                <td>
-                  English
-                </td>
-                <td>
-                  2018-21
-                </td>
-                <td>19</td>
-                <td>Z.Abi</td>
-                <td>O.zhani</td>
-                <td>L.Kesha</td>
-                <td>pabi193@gmail.com</td>
-                <td>0987764321</td>
-                <td>99,mnv strret,Abc</td>
-                <button routerLink="/student/edit">EDIT</button>
-              </tr>
-              <tr>
-                <td class="text-right">
-                  kcas10
-                </td>
-                <td>
-                  Tamil
-                </td>
-                <td>
-                  2018-21
-                </td>
-                <td>18</td>
-                <td>L.Janani</td>
-                <td>K.Lioani</td>
-                <td>P.Kayal</td>
-                <td>janu432@gmail.com</td>
-                <td>0987684721</td>
-                <td>99,akihg strret,Abc</td>
-                <button routerLink="/student/edit">EDIT</button>
-              </tr>
-              <tr>
-                <td class="text-right">
-                  Kcas11
-                </td>
-                <td>
-                  chemistry
-                </td>
-                <td>
-                  2018-21
-                </td>
-                <td>19</td>
-                <td>S.Riya</td>
-                <td>L.Sawer</td>
-                <td>A.Jhohi</td>
-                <td>Riyal543@gmail.com</td>
-                <td>0987094321</td>
-                <td>23,alokj strret,Abc</td>
-                <button routerLink="/student/edit">EDIT</button>
-              </tr>
-              <tr>
-                <td class="text-right">
-                  kcas12
-                </td>
-                <td>
-                  B.Com
-                </td>
-                <td>
-                  2018-21
-                </td>
-                <td>18</td>
-                <td>C.Iothul</td>
-                <td>V.Charlie</td>
-                <td>P.Tessa</td>
-                <td>IOl786@gmail.com</td>
-                <td>0987004321</td>
-                <td>94,apoe strret,Abc</td>
-                <button routerLink="/student/edit">EDIT</button>
-              </tr>
-              <tr>
-                <td class="text-right">
-                  Kcas13
-                </td>
-                <td>
-                  BBA
-                </td>
-                <td>
-                  2018-21
-                </td>
-                <td>18</td>
-                <td>V.Shanthi</td>
-                <td>L.Vinai</td>
-                <td>H.Luna</td>
-                <td>pliui123@gmail.com</td>
-                <td>0934654321</td>
-                <td>90,jubde strret,Abc</td>
-                <button routerLink="/student/edit">EDIT</button>
-              </tr>
-              <tr>
-                <td class="text-right">
-                  kcas14
-                </td>
-                <td>
-                  BCA
-                </td>
-                <td>
-                  2018-21
-                </td>
-                <td>20</td>
-                <td>P.faru</td>
-                <td>K.Paul</td>
-                <td>K.Seha</td>
-                <td>pfaru23@gmail.com</td>
-                <td>0987564321</td>
-                <td>98,aklo strret,Abc</td>
-                <button routerLink="/student/edit">EDIT</button>
-              </tr>
-              <tr>
-                <td class="text-right">
-                  kcas15
-                </td>
-                <td>
-                  MicroBiology
-                </td>
-                <td>
-                  2018-21
-                </td>
-                <td>19</td>
-                <td>R.kyra</td>
-                <td>O.Ranveer</td>
-                <td>P.Chopra</td>
-                <td>Kyra23@gmail.com</td>
-                <td>0987654321</td>
-                <td>99,abde strret,Abc</td>
-                <button routerLink="/student/edit">EDIT</button>
-              </tr>
-              <tr>
-                <td class="text-right">
-                  kcas16
-                </td>
-                <td>
-                  CA
-                </td>
-                <td>
-                  2018-21
-                </td>
-                <td>18</td>
-                <td>D.Uthra</td>
-                <td>A.Dani</td>
-                <td>T.Anitha</td>
-                <td>uthra093@gmail.com</td>
-                <td>8767654321</td>
-                <td>09,juye strret,Abc</td>
-                <button routerLink="/student/edit">EDIT</button>
-              </tr>
-              <tr>
-                <td class="text-right">
-                  Kcas17
-                </td>
-                <td>
-                  Tamil
-                </td>
-                <td>
-                  2018-21
-                </td>
-                <td>18</td>
-                <td>H.hahra</td>
-                <td>K.Hani</td>
-                <td>L.Kaura</td>
-                <td>tru3223@gmail.com</td>
-                <td>0989854321</td>
-                <td>918,cche strret,Abc</td>
-                <button routerLink="/student/edit">EDIT</button>
-              </tr>
-              <tr>
-                <td class="text-right">
-                  kcas18
-                </td>
-                <td>
-                  Computer science
-                </td>
-                <td>
-                  2018-21
-                </td>
-                <td>19</td>
-                <td>H.Aura</td>
-                <td>K.Halis</td>
-                <td>J.Liya</td>
-                <td>kuy5423@gmail.com</td>
-                <td>0987114321</td>
-                <td>96,mkje strret,Abc</td>
-                <button routerLink="/student/edit">EDIT</button>
-              </tr>
-              <tr>
-                <td class="text-right">
-                  Kcas19
-                </td>
-                <td>
-                  English
-                </td>
-                <td>
-                  2018-21
-                </td>
-                <td>20</td>
-                <td>D.Halisi</td>
-                <td>D.Dhoni</td>
-                <td>L.Lural</td>
-                <td>halis098@gmail.com</td>
-                <td>0987654321</td>
-                <td>123,ccde strret,Abc</td>
-                <button routerLink="/student/edit">EDIT</button>
-              </tr>
-              <tr>
-                <td class="text-right">
-                  kcas20
-                </td>
-                <td>
-                  Maths
-                </td>
-                <td>
-                  2018-21
-                </td>
-                <td>19</td>
-                <td>K.Vithra</td>
-                <td>l.kananyan</td>
-                <td>K.Lamua</td>
-                <td>vithra453@gmail.com</td>
-                <td>0987654091</td>
-                <td>954,apoid strret,Abc</td>
-                <button routerLink="/student/edit">EDIT</button>
-              </tr>
+              
             </tbody>
           </table>
         </div>
