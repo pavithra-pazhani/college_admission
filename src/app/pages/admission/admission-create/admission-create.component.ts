@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AdmissionService } from '../admission.service';
 
 @Component({
   selector: 'app-admission-create',
@@ -7,19 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdmissionCreateComponent implements OnInit {
 
-  searchname:any="";  
-  info=[
-    {reg:101,name:'aaa',dep:'cs'},
-    {reg:102,name:'bbb',dep:'bca'}
-  ]
-
-  constructor() { }
+   constructor(private admissioncreate:AdmissionService) { }
 
   ngOnInit(): void {
   }
   onclick()
   {
     alert("Your Form was Successfully Updated");
+
   }
 
 }
