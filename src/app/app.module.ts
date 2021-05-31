@@ -19,7 +19,7 @@ import { StudentEditComponent } from './pages/student/student-edit/student-edit.
 import { AdmissionCreateComponent } from './pages/admission/admission-create/admission-create.component';
 import { AdmissionEditComponent } from './pages/admission/admission-edit/admission-edit.component';
 import { FilterPipe } from './pages/admission/admission-create/filter.pipe';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -42,7 +42,8 @@ import { FilterPipe } from './pages/admission/admission-create/filter.pipe';
     NavbarModule,
     ToastrModule.forRoot(),
     FooterModule,
-    FixedPluginModule
+    FixedPluginModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
