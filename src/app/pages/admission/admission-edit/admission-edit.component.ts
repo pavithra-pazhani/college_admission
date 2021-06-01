@@ -11,5 +11,9 @@ export class AdmissionEditComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  onclick()
+  {
+    alert("Your Form was Successfully Edited! THANK YOU!");
 
+  }
 }
